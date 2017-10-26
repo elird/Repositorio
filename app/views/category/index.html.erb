@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<h1>Lista de Paises</h1>
+
+<table border>
+  <tr>
+ 
+    <th scope="col">titulo</th>
+    <th scope="col">descripcion</th>
+    <th colspan="2"><%= link_to "nuevo", :action=>"new"%>
+    </th>
+
+  </tr>
+ 
+  <tbody>
+        <% @category.each do |category| %>
+        
+      <tr>
+      	<td>
+      		<%= category.titulo %>
+      	
+      	</td>
+      	
+      	<td>
+      		<%= category.descrip%>
+      		
+      	</td>
+
+        <td>
+          <%=  link_to "Editar", :action=>"edit", :id=> category.id %>
+          
+        </td>
+
+        <td>
+          <%= link_to 'Eliminar', { :action => :destroy, :id => category.id }, :method => :delete, :data => { :confirm => 'Esta seguro?' } %>
+          
+          
+        </td>
+
+     </tr>
+
+        <%end%>
+    </tbody>
+</table>
+
+</body>
+</html>
+
