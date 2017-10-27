@@ -13,15 +13,15 @@
 <nav class="navbar navbar-inverse">
   <div class="container-fluid">
     <div class="navbar-header">
-      <a class="navbar-brand" href="#">Blog</a>
+      <%= link_to "Aplicacion", :root, class: "navbar-brand" %>
     </div>
     <ul class="nav navbar-nav">
       <li>
         <%= link_to "Articulos", :controller=> 'category', :action=>'show', :id=>1 %></li>
       <li>
         <%= link_to "Noticias", :controller=> 'category', :action=>'show', :id=>2 %></li>
-      <li><a href="<%= faq_index_path  %>">Noticias</a></li>
-      <li><a href="<%= faq_index_path  %>">Preguntas y Respuestas</a></li>
+      <li>
+        <%= link_to "Preguntas y Respuestas", :controller=> 'faq', :action=>'index' %></li>  
     </ul>
     <!-- ESTO ESTA AL COHETE SI NO SE IMPLEMENTA
     <form class="navbar-form navbar-left">
