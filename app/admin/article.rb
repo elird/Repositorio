@@ -6,7 +6,8 @@ form do |f|
       	f.input :category_id, label:  "Categoria",  :as =>  :select, :collection => Category.all.map{|a|["#{a.titulo}", a.id]}
         f.input :titulo
        	f.input :contenido
-       	f.input :fecha
+       	f.input :fecha        
+        f.input :image 
 		f.input :estado
       end
       
@@ -31,6 +32,6 @@ form do |f|
 #   permitted
 # end
 permit_params do
-   permitted = [:titulo, :contenido, :fecha, :estado, :category_id]
+   permitted = [:titulo, :contenido, :fecha, :estado, :image, :category_id]
 	end
 end

@@ -1,2 +1,12 @@
-<h1>Article#show</h1>
-<p>Find me in app/views/article/show.html.erb</p>
+<h1 class="mt-4"><%= @arti.titulo %></h1>
+         <hr>
+          <p>Publicado el <%= @arti.fecha %></p>
+         <hr>
+         <img class="img-fluid rounded" src="<%= @arti.image %>" alt="">
+          <hr>
+
+          <!-- Post Content -->
+          <%= @arti.contenido %>
+          <!--  FIN  Post Content -->
+          
+          <hr>
