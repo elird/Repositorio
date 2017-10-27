@@ -76,12 +76,6 @@ ActiveRecord::Schema.define(version: 20171026234728) do
     t.datetime "updated_at", null: false
   end
 
-  create_table "ar_internal_metadata", primary_key: "key", force: :cascade do |t|
-    t.string   "value"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
-
   create_table "articles", force: :cascade do |t|
     t.string   "titulo"
     t.text     "contenido"
@@ -97,29 +91,21 @@ ActiveRecord::Schema.define(version: 20171026234728) do
 
   create_table "categories", force: :cascade do |t|
     t.string   "titulo"
-    t.text     "descripcion"
-    t.integer  "estado"
-    t.datetime "created_at",  null: false
-    t.datetime "updated_at",  null: false
+    t.text     "descrip"
+    t.integer  "estago"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
   create_table "institutions", force: :cascade do |t|
     t.string   "nombre"
     t.string   "direccion"
     t.string   "ciudad"
-    t.string   "telefono"
+    t.string   "telf"
     t.string   "celular"
     t.float    "latitud"
     t.float    "longitud"
     t.integer  "estado"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
-
-  create_table "posts", force: :cascade do |t|
-    t.string   "title"
-    t.text     "body"
-    t.string   "tags"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

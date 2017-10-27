@@ -1,7 +1,7 @@
 <% @arti.each do |a| %>
 
 
-          <h1 class="mt-4"><%= a.titulo %></h1>
+          <h1 class="mt-4"><%= link_to a.titulo,:action=>"show", :id=> a.id %></h1>
          <hr>
           <p>Publicado el <%= a.fecha %></p>
          <hr>
@@ -9,7 +9,7 @@
           <hr>
 
           <!-- Post Content -->
-          <%= a.contenido %>
+          <%= a.contenido[1..300] %> <p><%= link_to "Seguir leyendo",:action=>"show", :id=> a.id %></p>
           <!--  FIN  Post Content -->
           
           <hr>

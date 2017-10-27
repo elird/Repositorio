@@ -16,11 +16,12 @@
       <a class="navbar-brand" href="#">Blog</a>
     </div>
     <ul class="nav navbar-nav">
-      <li class="active"><a href="#">Inicio</a></li>
-      <li><a href="#">Articulos</a></li>
-      <li><a href="#">Noticias</a></li>
-      <li><a href="#">Preguntas y Respuestas</a></li>
+      <li class="active"><a href="<%= category_index_path %>">Inicio</a></li>
+      <li><a href="<%= category_index_path %>">Articulos</a></li>
+      <li><a href="<%= faq_index_path  %>">Noticias</a></li>
+      <li><a href="<%= faq_index_path  %>">Preguntas y Respuestas</a></li>
     </ul>
+    <!-- ESTO ESTA AL COHETE SI NO SE IMPLEMENTA
     <form class="navbar-form navbar-left">
       <div class="input-group">
         <input type="text" class="form-control" placeholder="Search">
@@ -30,7 +31,7 @@
           </button>
         </div>
       </div>
-    </form>
+    </form> -->
   </div>
 </nav>
 

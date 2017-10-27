@@ -1,29 +1,18 @@
 Rails.application.routes.draw do
   #resources :faq do
   #end
-
+  root 'article#index'
   get 'faq/index'
   #get 'faq/show'
 
 #rutas categoria
   get 'category/index'
+  get 'category/:id' , to: 'category#show' , as: 'category_show_path'
 
-  get 'article/show'
-
-  get 'category/edit'
-
-  get 'category/new'
-
-  post 'category/create'
-
-  patch 'category/update'
-
-  delete 'category/destroy'
 
 #rutas articulos
   get 'article/index'
-
-  get 'article/:id' => 'article#show'
+  get 'article/:id/show' , to: 'article#show' , as: 'article_show_path'
 
   devise_for :admin_users, ActiveAdmin::Devise.config
   ActiveAdmin.routes(self)
