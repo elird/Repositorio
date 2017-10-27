@@ -5,7 +5,7 @@
 <% @arti.each do |a| %>
 
 
-          <h1 class="mt-4"><%= link_to a.titulo,:action=>"show", :id=> a.id %></h1>
+          <h1 class="mt-4"><%= link_to a.titulo,:controller=>"article",:action=>"show", :id=> a.id %></h1>
          <hr>
           <p>Publicado el <%= a.fecha %></p>
          <hr>
