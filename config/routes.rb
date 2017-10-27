@@ -20,17 +20,7 @@ Rails.application.routes.draw do
 #rutas articulos
   get 'article/index'
 
-  get 'article/show'
-
-  get 'article/new'
-
-  get 'article/edit'
-
-  post 'article/create'
-
-  patch 'article/update'
-
-  delete 'article/destroy'
+  get 'article/:id' => 'article#show'
 
   devise_for :admin_users, ActiveAdmin::Devise.config
   ActiveAdmin.routes(self)
