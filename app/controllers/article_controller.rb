@@ -6,6 +6,6 @@ def index
   end
 
 def show 
-  
+  	@arti=Article.find(params[:id])
 end
 end
