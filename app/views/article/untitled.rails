@@ -1,0 +1,14 @@
+
+
+          <h1 class="mt-4">Titulo</h1>
+         <hr>
+          <p>FECHA</p>
+         <hr>
+         <img class="img-fluid rounded" src="http://localhost:3000/images/imagen.png" alt="">
+          <hr>
+
+          <!-- Post Content -->
+          
+          <!--  FIN  Post Content -->
+          
+          <hr>
