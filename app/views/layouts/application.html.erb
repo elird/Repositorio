@@ -16,8 +16,10 @@
       <a class="navbar-brand" href="#">Blog</a>
     </div>
     <ul class="nav navbar-nav">
-      <li class="active"><a href="<%= category_index_path %>">Inicio</a></li>
-      <li><a href="<%= category_index_path %>">Articulos</a></li>
+      <li>
+        <%= link_to "Articulos", :controller=> 'category', :action=>'show', :id=>1 %></li>
+      <li>
+        <%= link_to "Noticias", :controller=> 'category', :action=>'show', :id=>2 %></li>
       <li><a href="<%= faq_index_path  %>">Noticias</a></li>
       <li><a href="<%= faq_index_path  %>">Preguntas y Respuestas</a></li>
     </ul>
