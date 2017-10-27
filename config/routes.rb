@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
 
+  get 'faq/index'
+
 #rutas categoria
   get 'category/index'
 

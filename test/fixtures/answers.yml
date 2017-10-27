@@ -1,9 +1,9 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  contenido: MyText
+  contenido: Cortatela
   estado: 1
 
 two:
-  contenido: MyText
+  contenido: Que me importa
   estado: 1
