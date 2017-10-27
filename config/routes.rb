@@ -1,6 +1,9 @@
 Rails.application.routes.draw do
+  #resources :faq do
+  #end
 
   get 'faq/index'
+  #get 'faq/show'
 
 #rutas categoria
   get 'category/index'
