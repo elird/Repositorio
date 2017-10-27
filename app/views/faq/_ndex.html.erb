@@ -11,13 +11,11 @@
                     </a>
                 </h4>
             </div>
+            <% @answer.question.each do |q| %>
             <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
-                <% @answer.each do |answer| %>
-                <div class="panel-body">
-                <%= answer.contenido %>
 
-                </div>
-                <%end%>
+              <%= a.contenido %>
+
             </div>
         </div>
 
